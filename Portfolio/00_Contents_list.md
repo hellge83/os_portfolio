@@ -16,4 +16,14 @@
 
 ---
 
+## Code samples
+
+My production work is under NDA, so these two public case studies illustrate two kinds of work that often matter more than training the model itself: **building the business logic around an ML model and taking ownership of undocumented legacy systems.**
+
+- [**Loan Applications**](https://github.com/hellge83/loan-applications) — **Turning model predictions into business decisions.** A credit risk model is only one component of a lending decision process. The real challenge is designing the logic around it: translating default probabilities into approval decisions using the actual cost of false approvals and false rejections, explaining individual decisions, checking for potential bias, and defining how the system should be deployed, monitored and governed. The result is a business-oriented design for a credit decision system, not just a model with an AUC score.
+
+- [**YSDA Contest**](https://github.com/hellge83/YSDA_contest) — **Reverse-engineering and reworking undocumented legacy ML.** Take over an existing pipeline with no documentation, 24 anonymous features and a seemingly impressive ROC-AUC of 0.97. Before improving anything, establish what the system actually does: reconstruct the features from raw transaction data, trace data leakage, verify the original results and identify how the underlying patterns change over time. The result is a rebuilt feature pipeline and a more realistic validation setup that accounts for temporal drift and previously unseen clients and merchants.
+
+---
+
 [Next: Analytics RAG ➡](01_Analytics_RAG%20(4%20min).md)
